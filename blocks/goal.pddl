@@ -1,0 +1,27 @@
+(define (problem p1)
+	(:domain blocks)
+	(:objects a b c)
+	(:init
+		;(clear c)
+		;(on-top c b)
+		;(on-top b a)
+		(clear a)
+		(on-floor a)
+		;(clear e)
+		;(on-top e d)
+		;(on-floor d)
+		(clear c)
+		(on-top c b)
+		(on-floor b)
+	)
+	(:goal
+		(and
+			(clear a)
+			(on-top a b)
+			
+			(on-top b c)
+			;(on-floor c)
+			(on-floor c)
+		)
+	)
+)
